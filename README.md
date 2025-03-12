@@ -8,6 +8,20 @@ Mendelian Randomization is a method that uses genetic variants as instrumental v
 - Visualization functions.
 - Sensitivity analysis modules (e.g., MR-Egger, weighted median, Leave-one-out).
 
+## Installation Guide
+### Dependencies
+1. Install the R language environment (version ≥ 4.0 is recommended).
+2. Install R packages:
+   ```r
+   install.packages(c("dplyr", "ggplot2", "TwoSampleMR", "data.table", "readxl"))
+   ```
+
+### Get the Code
+```bash
+git clone https://github.com/your-username/mr-analysis-scripts.git
+cd mr-analysis-scripts
+```
+
 ## Usage Instructions
 ### Input Data Requirements
 1. Exposure data:
