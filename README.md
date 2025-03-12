@@ -41,7 +41,7 @@ cd MR_Scripts
    - The format is the same as the exposure data.
 3. Covariate data (optional): Information on confounding factors.
 
-### Run the Script
+### Run the Scripts
 ```shell
 step1.  cd MibioGen; 
 Step2.  ls *.summary.txt |perl -ne 'chomp;print "sed -i '\''1s/rsID/SNP/'\'' $_\n"' >rename.sh
