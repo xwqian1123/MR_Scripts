@@ -4,7 +4,7 @@ This repository provides reproducible scripts and tools for Mendelian Randomizat
 ## 📚 Table of Contents
 - [⚡ Project Description](#project-description)
 - [🛠️ Installation Guide](#installation-guide)
-- [📝 Usage Instructions](#usage-instructions)
+- [💡 Usage Instructions](#usage-instructions)
 - [🤖 Example Analysis Workflow](#example-analysis-workflow)
 
 ## Project Description
