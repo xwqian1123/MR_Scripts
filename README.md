@@ -3,9 +3,9 @@ This repository provides reproducible scripts and tools for Mendelian Randomizat
 
 ## Table of Contents
 - [📚 Project Description](#project-description)
-- [📝 Installation Guide](#installation-guide)
+- [🛠️ Installation Guide](#installation-guide)
 - [🤖 Usage Instructions](#usage-instructions)
-- [🚀 Example Analysis Workflow](#example-analysis-workflow)
+- [📝 Example Analysis Workflow](#example-analysis-workflow)
 
 ## Project Description
 Mendelian Randomization is a method that uses genetic variants as instrumental variables (IVs) to evaluate the causal relationship between exposure factors (e.g., gene expression, metabolites) and disease outcomes. This repository includes:
