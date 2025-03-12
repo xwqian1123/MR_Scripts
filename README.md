@@ -16,6 +16,22 @@ Mendelian Randomization is a method that uses genetic variants as instrumental v
    - The format is the same as the exposure data.
 3. Covariate data (optional): Information on confounding factors.
 
+### Run the Script
+```r
+# Load custom functions
+source("scripts/mr_analysis.R")
+
+# Perform the core analysis
+result <- run_mr_analysis(
+  exposure_data = "data/exposure.csv",
+  outcome_data = "data/outcome.csv",
+  covariates = "data/covariates.csv"
+)
+
+# Generate the result report
+generate_report(result, output_dir = "results/")
+```
+
 ## Example Analysis Workflow
 1. **Data Preparation**: Organize the GWAS summary data into the specified format.
 2. **Instrumental Variable Selection**: Filter SNPs based on the F-statistic and p-value.
