@@ -42,15 +42,30 @@ cd MR_Scripts
 3. Covariate data (optional): Information on confounding factors.
 
 ### Run the Script
-```r
-# Load custom functions
-source("scripts/mr_analysis.R")
+```shell
+step1.  cd MibioGen; 
+Step2.  ls *.summary.txt |perl -ne 'chomp;print "sed -i '\''1s/rsID/SNP/'\'' $_\n"' >rename.sh
+	sh rename.sh
+	ls *.summary.txt |perl -ne 'chomp;print "sed -i '\''1s/P.weightedSumZ/P/'\'' $_\n"' > rename.sh
+	sh rename.sh
+	ls *.summary.txt > list_path.txt
+	python3 filtered_dat.py
 
-# Perform the core analysis
-result <- run_mr_analysis(
-  exposure_data = "data/exposure.csv",
-  outcome_data = "data/outcome.csv",
-  covariates = "data/covariates.csv"
+Step3.	ls *_filtered.txt |perl -ne 'chomp;@t=split(/\./,$_);print "/root/software/plink --bfile EDU/EUR --clump $_ --clump-p1 1 --clump-r2 0.001 --clump-kb 10000 -out clump_$t[1].$t[2].$t[3]\n";' >plink.sh
+	sh plink.sh
+	ls *.clumped|perl -ne 'chomp;print" python3 retype.py $_\n";' >retype.sh
+	sh retype.sh
+
+Step4	ls *.summary.txt|perl -ne'chomp;@t=split(/\.summary.txt/,$_);@p=split(/\./,$t[0]);print "python3 get_bac.py out_clump_$p[0].$p[1].$p[3].clump $t[0].summary_filtered.txt\n";' >get_bac.sh
+	sh get_bac.sh
+
+Step5	ls mer_out.*|perl -ne'chomp;@at=split(/\mer_out./);print"python3 all_ex_out.py $_ finnger_R11_O15_PREECLAMPS\n";'>all_ex_out.sh
+	sh all_ex_out.sh
+
+Step6   ls R11_* |perl -ne 'chomp;@t=split(/\_/,$_);@p=split(/\./,$t[4]);print "python3 get_result.py $_ R11_$p[0].$p[1].$p[2]\n";' >result.sh
+	sh result.sh
+	ls *.exposure.txt |perl -ne 'chomp;@t=split(/\./,$_);print"$_\t$t[0].$t[1].$t[2].outcome.txt\n";' >file_path.txt
+Step7	Rscript MR_script.R file_path.txt
 )
 
 # Generate the result report
