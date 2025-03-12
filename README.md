@@ -25,7 +25,7 @@ install.packages(c("dplyr", "ggplot2", "TwoSampleMR", "data.table", "readxl"))
 ### Get the Code
 ```bash
 git clone https://github.com/xwqian1123/MR_Scripts.git
-cd mr-analysis-scripts
+cd MR_Scripts
 ```
 
 ## Usage Instructions
