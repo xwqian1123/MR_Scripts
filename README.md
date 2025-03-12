@@ -16,6 +16,22 @@ Mendelian Randomization is a method that uses genetic variants as instrumental v
    - The format is the same as the exposure data.
 3. Covariate data (optional): Information on confounding factors.
 
+## Example Analysis Workflow
+1. **Data Preparation**: Organize the GWAS summary data into the specified format.
+2. **Instrumental Variable Selection**: Filter SNPs based on the F-statistic and p-value.
+3. **Causal Effect Estimation**:
+   - Inverse Variance Weighted (IVW).
+   - Weighted Median.
+   - MR-Egger Regression.
+4. **Heterogeneity Testing**:
+   - Cochran's Q test.
+   - Leave-one-out method.
+5. **Visualization**:
+   - Forest plot.
+   - Funnel plot.
+   - Scatter plot of causal effects.
+
+
 
 
 
