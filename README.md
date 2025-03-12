@@ -16,7 +16,7 @@ Mendelian Randomization is a method that uses genetic variants as instrumental v
 
 ## Installation Guide
 ### Dependencies
-1. Install the R language environment (version ≥ 4.0 is recommended).
+1. Install the R language environment (version ≥ 4.3 is recommended).
 2. Install R packages:
 ```r
 install.packages(c("dplyr", "ggplot2", "TwoSampleMR", "data.table", "readxl"))
