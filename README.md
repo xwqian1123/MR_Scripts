@@ -8,6 +8,14 @@ Mendelian Randomization is a method that uses genetic variants as instrumental v
 - Visualization functions.
 - Sensitivity analysis modules (e.g., MR-Egger, weighted median, Leave-one-out).
 
+## Usage Instructions
+### Input Data Requirements
+1. Exposure data:
+   - It should contain SNP names, effect alleles, other alleles, effect sizes, and standard errors.
+2. Outcome data:
+   - The format is the same as the exposure data.
+3. Covariate data (optional): Information on confounding factors.
+
 
 
 
