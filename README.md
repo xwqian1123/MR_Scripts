@@ -54,7 +54,7 @@ generate_report(result, output_dir = "results/")
 
 ## Example Analysis Workflow
 1. **Data Preparation**: Organize the GWAS summary data into the specified format.
-2. **Instrumental Variable Selection**: Filter SNPs based on the F-statistic and p-value.
+2. **Instrumental Variable Selection**: Filter SNPs based on the p-value.
 3. **Causal Effect Estimation**:
    - Inverse Variance Weighted (IVW).
    - Weighted Median.
