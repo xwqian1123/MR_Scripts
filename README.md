@@ -4,9 +4,6 @@ This repository provides reproducible scripts and tools for Mendelian Randomizat
 > [!IMPORTANT]
 > This repository provides reproducible scripts and tools for Mendelian Randomization (MR) analysis. It supports functions such as causal effect inference, heterogeneity testing, and sensitivity analysis.
 
-> [!IMPORTANT]
-> By using this repository or any code related to it, you agree to the [legal notice](LEGAL_NOTICE.md). The author is **not responsible for the usage of this repository nor endorses it**, nor is the author responsible for any copies, forks, re-uploads made by other users, or anything else related to GPT4Free. This is the author's only account and repository. To prevent impersonation or irresponsible actions, please comply with the GNU GPL license this Repository uses.
-
 ## 📚 Table of Contents
 - [⚡ Project Description](#project-description)
 - [🛠️ Installation Guide](#installation-guide)
