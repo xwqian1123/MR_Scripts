@@ -67,9 +67,6 @@ Step6   ls R11_* |perl -ne 'chomp;@t=split(/\_/,$_);@p=split(/\./,$t[4]);print "
 	ls *.exposure.txt |perl -ne 'chomp;@t=split(/\./,$_);print"$_\t$t[0].$t[1].$t[2].outcome.txt\n";' >file_path.txt
 Step7	Rscript mr_analysis.R file_path.txt
 )
-
-# Generate the result report
-generate_report(result, output_dir = "results/")
 ```
 
 ## 🤖 Example Analysis Workflow
