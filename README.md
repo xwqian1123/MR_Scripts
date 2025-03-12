@@ -2,7 +2,7 @@
 This repository provides reproducible scripts and tools for Mendelian Randomization (MR) analysis. It supports functions such as causal effect inference, heterogeneity testing, and sensitivity analysis.
 
 > [!IMPORTANT]
-> This repository provides reproducible scripts and tools for Mendelian Randomization (MR) analysis. It supports functions such as causal effect inference, heterogeneity testing, and sensitivity analysis.
+> This repository provides reproducible scripts and tools for Mendelian Randomization (MR) analysis. It supports functions such as causal effect inference, heterogeneity testing, and sensitivity analysis. The development of these scripts aims to promote the widespread application of MR analysis in the field of genetic epidemiology and related disciplines. We hope that by providing easy - to - use and reliable tools, more researchers can uncover causal relationships between genetic factors and complex diseases, ultimately contributing to the advancement of precision medicine and disease prevention strategies.
 
 ## 📚 Table of Contents
 - [⚡ Project Description](#project-description)
