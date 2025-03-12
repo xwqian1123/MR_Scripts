@@ -1,8 +1,8 @@
 # Mendelian Randomization Analysis Scripts  
 This repository provides reproducible scripts and tools for Mendelian Randomization (MR) analysis. It supports functions such as causal effect inference, heterogeneity testing, and sensitivity analysis.
 
-## Table of Contents
-- [📚 Project Description](#project-description)
+## 📚Table of Contents
+- [⚡ Project Description](#project-description)
 - [🛠️ Installation Guide](#installation-guide)
 - [📝 Usage Instructions](#usage-instructions)
 - [🤖 Example Analysis Workflow](#example-analysis-workflow)
